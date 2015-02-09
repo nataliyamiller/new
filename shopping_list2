@@ -1,0 +1,17 @@
+shopping_list = list()
+
+print("What do we need to get from the store today?")
+print("Enter 'DONE' to stop adding items.")
+
+while True:
+  new_item = input("> ")
+  
+  if new_item == 'DONE': 
+    break
+  
+  shopping_list.append(new_item)
+  print("Item added. Your shopping list now has {} items".format(len(shopping_list)))
+  continue
+  
+print("Here is your list:")
+print(', '.join(shopping_list))
